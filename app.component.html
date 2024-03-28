@@ -2,7 +2,7 @@
   <h2 class="title">Stopwatch Timer</h2>
   <div class="watchBox">
     <ng-container>
-      <h2>00:00:00</h2>
+      <h2>{{hours}}:{{minutes}}:{{seconds}}</h2>
     </ng-container>
     <button *ngIf="!running" (click)="startTimer()">Start</button>
     <button *ngIf="running" (click)="stopTimer()">Stop</button>
